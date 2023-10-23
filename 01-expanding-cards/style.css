@@ -7,12 +7,57 @@
 body {
   align-items: center;
   display: flex;
-  flex-direction: column;
   font-family: 'Roboto', sans-serif;
   height: 100vh;
   justify-content: center;
   margin: 0;
   overflow: hidden;
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+}
+
+.panel {
+  border-radius: 3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFF;
+  cursor: pointer;
+  flex: 0.5;
+  height: 80vh;
+  margin: .5rem;
+  position: relative;
+  transition: flex .8s ease-in;
+}
+
+.panel h3 {
+  bottom: 1.25rem;
+  font-size: 1.5rem;
+  left: 1.25rem;
+  opacity: 0;
+  position: absolute;
+}
+
+.panel.active {
+  flex: 4;
+}
+
+.panel.active h3 {
+  opacity: .9;
+}
+
+@media(max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
 }
 
 .tundra {
