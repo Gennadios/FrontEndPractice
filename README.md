@@ -2,14 +2,15 @@
 
 This repository is a collection of simple yet educational mini-projects that aim to showcase fundamental concepts in HTML, CSS, and JavaScript. Whether you're new to web development or looking to revisit the basics, these projects offer valuable insights into the core technologies of web development.
 
-:wrench: Technologies Used
-HTML
-CSS
-JavaScript
+:wrench: Technologies Used:
+-HTML
+-CSS
+-JavaScript
 
 :file_folder: Project List
-Project 1: Expanding Cards
-Project 2: Coming soon ...
+-Project 1: Expanding Cards
+-Project 2: Progress Steps
+-Project 3: coming soon ...
 
 :rocket: How to Run Projects Locally
 Running these projects on your local machine is straightforward. Follow the steps below:
