@@ -44,6 +44,10 @@ body {
   width: 12rem;
 }
 
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+
 .circle button {
   background: transparent;
   border: 0;
@@ -68,4 +72,63 @@ body {
   top: 60%;
   transform: rotate(90deg);
   transform-origin: top left;
+}
+
+.container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: .3s;
+}
+
+nav {
+  position: fixed;
+  bottom: 2.5rem;
+  left: 0;
+  z-index: 2;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 2rem;;
+}
+
+nav ul li {
+  color: #FFF;
+  text-transform: uppercase;
+  margin: 2.5rem 0;
+  transform: translateX(-100%);
+  transition: transform .4s ease-in;
+}
+
+nav ul li i {
+  font-size: 1.25rem;
+  margin-right: .5rem;
+}
+
+nav ul li + li {
+  margin-left: 1rem;
+  transform: translateX(-150%);
+}
+
+nav ul li + li + li {
+  margin-left: 2rem;
+  transform: translateX(-200%);
+}
+
+.content {
+  max-width: 60rem;
+  margin: 3.5rem auto;
+}
+
+.content h1 {
+  margin: 0;
+}
+
+.content small {
+  color: #555;
+  font-style: italic;
+}
+
+.content p {
+  color: #333;
+  line-height: 1.5;
 }
