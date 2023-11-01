@@ -6,10 +6,43 @@
 
 body {
   align-items: center;
+  background-color: #EFEDD6;
   display: flex;
+  flex-direction: column;
   font-family: 'Roboto', sans-serif;
-  height: 100vh;
   justify-content: center;
   margin: 0;
-  overflow: hidden;
+}
+
+h1 {
+  margin: 10px;
+}
+
+.box {
+  background-color: steelblue;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25rem;
+  height: 12.5rem;
+  margin: .75rem;
+  border-radius: 10px;
+  box-shadow: .125rem .25rem .3rem rgba(0, 0, 0, .3);
+  transform: translateX(200%);
+  transition: transform .4s ease;
+}
+
+/* All the odd .boxes will move from the right side of the screen 
+   and all the even ones will move from the left side of the screen */
+.box:nth-of-type(even) {
+  transform: translateX(-200%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+.box h2 {
+  font-size: 2.5rem;
 }
