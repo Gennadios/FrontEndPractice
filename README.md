@@ -13,7 +13,8 @@ This repository is a collection of simple yet educational mini-projects that aim
 - Project 3: Rotating Navigation
 - Project 4: Hidden Search Widget
 - Project 5: Blurry Loading
-- Project 6: coming soon...
+- Project 6: Scrolling Animation
+- Project 7: coming soon...
 
 :rocket: How to Run Projects Locally
 Running these projects on your local machine is straightforward. Follow the steps below:
