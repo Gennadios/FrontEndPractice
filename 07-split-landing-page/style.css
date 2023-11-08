@@ -48,6 +48,18 @@ h1 {
   width: 15rem;
 }
 
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+    top: 25%;
+  }
+
+  .btn {
+    padding: 1rem;
+    width: 10rem;
+  }
+}
+
 .split.left .btn:hover {
   background-color: var(--left-btn-hover-color);
   border-color: var(--left-btn-hover-color);
