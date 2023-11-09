@@ -15,7 +15,8 @@ This repository is a collection of simple yet educational mini-projects that aim
 - Project 5: Blurry Loading
 - Project 6: Scrolling Animation
 - Project 7: Split Landing Page
-- Project 8: coming soon...
+- Project 8: Form Wave Animation
+- Project 9: coming soon...
 
 :rocket: How to Run Projects Locally
 Running these projects on your local machine is straightforward. Follow the steps below:
