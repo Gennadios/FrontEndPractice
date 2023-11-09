@@ -75,5 +75,25 @@ body {
 
 .form-control input:focus,
 .form-control input:valid {
+  border-bottom-color: lightblue;
   outline: 0;
+}
+
+.form-control label {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+}
+
+.form-control label span {
+  font-size: 1.125rem;
+  display: inline-block;
+  min-width: .25rem;
+  transition: .3s cubic-bezier(.68, -.55, .265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: lightblue;
+  transform: translateY(-2rem);
 }
