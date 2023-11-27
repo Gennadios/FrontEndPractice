@@ -18,7 +18,8 @@ This repository is a collection of simple yet educational mini-projects that aim
 - Project 8: Form Wave Animation
 - Project 9: Interactive Sound Board
 - Project 10: Dad Jokes
-- Project 11: coming soon...
+- Project 11: Event Keycodes
+- Project 12: coming soon...
 
 :rocket: How to Run Projects Locally
 Running these projects on your local machine is straightforward. Follow the steps below:
