@@ -19,6 +19,7 @@ This repository is a collection of simple yet educational mini-projects that aim
 - Project 9: Interactive Sound Board
 - Project 10: Dad Jokes
 - Project 11: Event Keycodes
+- Project 12: FAQ Collapse
 - Project 12: coming soon...
 
 :rocket: How to Run Projects Locally
