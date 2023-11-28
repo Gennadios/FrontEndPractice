@@ -1,6 +1,12 @@
 const tagsContainer = document.getElementById('tags');
 const textarea = document.querySelector('.textarea');
 
+// How many times the tags will be highlighted
+const times = 30;
+
+// Highlight / unhighlight time in milliseconds
+const flickerTimeInMs = 100;
+
 textarea.focus();
 
 textarea.addEventListener('keyup', (event) => {
@@ -31,7 +37,6 @@ const createTags = input => {
 };
 
 const randomSelect = () => {
-  const times = 30;
   const interval = setInterval(() => {
     const randomTag = pickRandomTag();
 
@@ -39,8 +44,8 @@ const randomSelect = () => {
 
     setTimeout(() => {
       unhighlightTag(randomTag);
-    }, 100);
-  }, 100);
+    }, flickerTimeInMs);
+  }, flickerTimeInMs);
 
   setTimeout(() => {
     clearInterval(interval);
@@ -50,7 +55,7 @@ const randomSelect = () => {
 
       highlightTag(randomTag);
     }, 100);
-  }, times * 100);
+  }, times * flickerTimeInMs);
 };
 
 const pickRandomTag = () => {
