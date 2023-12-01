@@ -22,7 +22,8 @@ This repository is a collection of simple yet educational mini-projects that aim
 - Project 12: FAQ Collapse
 - Project 13: Random Choice Picker
 - Project 14: Animated Navigation
-- Project 15: coming soon...
+- Project 15: Increment Counter
+- Project 16: coming soon...
 
 :rocket: How to Run Projects Locally
 Running these projects on your local machine is straightforward. Follow the steps below:
