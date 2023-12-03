@@ -44,11 +44,13 @@ header {
 main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .movie {
   background-color: var(--secondary-color);
   box-shadow: 0 4px 5px rgba(0, 0, 0, .2);
+  cursor: pointer;
   margin: 1rem;
   width: 18.75rem;
   position: relative;
