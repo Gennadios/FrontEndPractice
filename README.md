@@ -26,7 +26,8 @@ This repository is a collection of simple yet educational mini-projects that aim
 - Project 16: Stay Hydrated
 - Project 17: Movie App
 - Project 18: Background Slider
-- Project 19: coming soon...
+- Project 19: Theme Clock
+- Project 20: coming soon...
 
 :rocket: How to Run Projects Locally
 Running these projects on your local machine is straightforward. Follow the steps below:
