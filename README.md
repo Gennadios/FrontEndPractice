@@ -24,7 +24,8 @@ This repository is a collection of simple yet educational mini-projects that aim
 - Project 14: Animated Navigation
 - Project 15: Increment Counter
 - Project 16: Stay Hydrated
-- Project 17: coming soon...
+- Project 17: Movie App
+- Project 18: coming soon...
 
 :rocket: How to Run Projects Locally
 Running these projects on your local machine is straightforward. Follow the steps below:
@@ -36,5 +37,7 @@ git clone https://github.com/Gennadios/FrontEndPractice.git
 ```
 
 2. **Navigate to a Mini-Project Folder**: Unzip the downloaded repository and navigate to the folder of the mini-project you want to run.
+
+NOTE: Some projects might require API keys to run locally. For example, to run #17 - Movie App, you must obtain an API key from [TMDB](https://www.themoviedb.org/).
 
 3. **Run index.html**: Simply double-click on the index.html file to run the project in your default web browser. No additional server setup is required.
