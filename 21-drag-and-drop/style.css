@@ -1,16 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
+  background-color: steelblue;
   align-items: center;
   display: flex;
-  flex-direction: column;
-  font-family: 'Roboto', sans-serif;
   height: 100vh;
   justify-content: center;
   margin: 0;
   overflow: hidden;
+}
+
+.empty {
+  height: 150px;
+  width: 150px;
+  margin: .625rem;
+  border: 3px solid black;
+  background-color: #FFF;
+}
+
+@media(max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+
+  .empty {
+    margin: .25rem;
+  }
+}
+
+.hold {
+  border: 5px solid #CCC;
+}
+
+.hovered {
+  background-color: #333;
+  border-color: #FFF;
+  border-style: dashed;
+}
+
+.fill {
+  background-image: url('https://source.unsplash.com/random/160x160');
+  height: 145px;
+  width: 145px;
+  cursor: grab;
 }
