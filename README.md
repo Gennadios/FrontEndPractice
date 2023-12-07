@@ -28,7 +28,8 @@ This repository is a collection of simple yet educational mini-projects that aim
 - Project 18: Background Slider
 - Project 19: Theme Clock
 - Project 20: Button Ripple Effect
-- Project 21: coming soon...
+- Project 21: Drag and Drop
+- Project 22: coming soon...
 
 :rocket: How to Run Projects Locally
 Running these projects on your local machine is straightforward. Follow the steps below:
