@@ -1,16 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 * {
   box-sizing: border-box;
 }
 
 body {
   align-items: center;
+  background-color: #2C3E50;
   display: flex;
-  flex-direction: column;
-  font-family: 'Roboto', sans-serif;
   height: 100vh;
   justify-content: center;
   margin: 0;
   overflow: hidden;
+}
+
+.kinetic {
+  position: relative;
+  height: 5rem;
+  width: 5rem;
+}
+
+.kinetic::after,
+.kinetic::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  border: 3rem solid transparent;
+  border-bottom-color: #FFF;
+  animation: rotateA 2s linear infinite .5s;
+}
+
+.kinetic::before {
+  transform: rotate(90deg);
+  animation: rotateB 2s linear infinite;
+}
+
+@keyframes rotateA {
+  0%, 25% {
+    transform: rotate(0deg);
+  }
+
+  50%, 75% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateB {
+  0%, 25% {
+    transform: rotate(90deg);
+  }
+
+  50%, 75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(450deg);
+  }
 }
