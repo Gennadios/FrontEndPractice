@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #F5F5F5;
+  background-color: #EEE;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -21,6 +21,7 @@ body {
 }
 
 canvas {
+  background-color: #FFF;
   border: 2px solid steelblue;
 }
 
