@@ -1,7 +1,16 @@
+const increaseBtn = document.getElementById('increase');
+const decreaseBtn = document.getElementById('decrease');
+const sizeElement = document.getElementById('brush-size');
+const colorElement = document.getElementById('color');
+const clearElement = document.getElementById('clear');
+
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
-let size = 20;
+let brushSize = 15;
+const minBrushSize = 5;
+const maxBrushSize = 60;
+
 let color = 'black';
 let isMousePressed = false;
 let x;
@@ -14,7 +23,7 @@ canvas.addEventListener('mousedown', event => {
   y = event.offsetY;
 });
 
-canvas.addEventListener('mouseup', event => {
+canvas.addEventListener('mouseup', () => {
   isMousePressed = false;
 
   x = undefined;
@@ -36,7 +45,7 @@ canvas.addEventListener('mousemove', event => {
 
 function drawCircle(x, y) {
   ctx.beginPath();
-  ctx.arc(x, y, size, 0, Math.PI * 2);
+  ctx.arc(x, y, brushSize, 0, Math.PI * 2);
   ctx.fillStyle = color;
   ctx.fill();
 }
@@ -46,9 +55,34 @@ function drawLine(x1, y1, x2, y2) {
   ctx.moveTo(x1, y1);
   ctx.lineTo(x2, y2);
   ctx.strokeStyle = color;
-  ctx.lineWidth = size * 2;
+  ctx.lineWidth = brushSize * 2;
   ctx.stroke();
 }
 
-drawCircle(100, 200);
-drawLine(300, 300, 300, 500);
+const updateDisplayedBrushSize = () => {
+  sizeElement.innerHTML = brushSize;
+};
+
+increaseBtn.addEventListener('click', () => {
+  brushSize += 5;
+
+  if (brushSize > maxBrushSize) {
+    brushSize = maxBrushSize;
+  }
+
+  updateDisplayedBrushSize();
+});
+
+decreaseBtn.addEventListener('click', () => {
+  brushSize -= 5;
+
+  if (brushSize < minBrushSize) {
+    brushSize = minBrushSize;
+  }
+
+  updateDisplayedBrushSize();
+});
+
+colorElement.addEventListener('change', event => color = event.target.value);
+
+clearElement.addEventListener('click', () => ctx.clearRect(0, 0, canvas.width, canvas.height));

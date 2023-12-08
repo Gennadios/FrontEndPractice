@@ -49,3 +49,13 @@ canvas {
 .toolbox > *:last-child {
   margin-left: auto;
 }
+
+.increase:hover,
+.decrease:hover {
+  background-color: #DDD;
+}
+
+.increase:active,
+.decrease:active {
+  transform: scale(.95);
+}
