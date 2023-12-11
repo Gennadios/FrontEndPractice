@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ECF0F1;
+  align-items: center;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .3);
+  border-radius: .5rem;
+  overflow: hidden;
+  width: 22rem;
+}
+
+.card-header {
+  height: 12.5rem;
+}
+
+.card-header img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.card-content {
+  background-color: #FFF;
+  padding: 1.5rem;
+}
+
+.card-title {
+  height: 1.25rem;
+  margin: 0;
+}
+
+.card-text {
+  color: #777;
+  margin: .625rem 0 1.25rem;
+}
+
+.author {
+  display: flex;
+}
+
+.profile-img {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: .625rem;
+  width: 6.25rem;
+}
+
+.author-info small {
+  color: #AAA;
+  margin-top: .25rem;
+}
+
+.animated-bg {
+  background-image: linear-gradient(
+    to right,
+    #F6F7F8 0%,
+    #EDEEF1 10%,
+    #F6F7F8 20%,
+    #F6F7F8 100%
+  );
+  background-size: 200% 100%;
+  animation: bgPos 1s linear infinite;
+}
+
+.animated-bg-text {
+  border-radius: 3rem;
+  display: inline-block;
+  margin: 0;
+  height: .75rem;
+  width: 100%;
+}
+
+@keyframes bgPos {
+  0% {
+    background-position: 50% 0%;
+  }
+
+  100% {
+    background-position: -150% 0;
+  }
+}
