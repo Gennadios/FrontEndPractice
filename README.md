@@ -32,7 +32,8 @@ This repository is a collection of simple yet educational mini-projects that aim
 - Project 22: Drawing App
 - Project 23: Kinetic CSS Loader
 - Project 24: Content Placeholder
-- Project 25: coming soon...
+- Project 25: Sticky Navbar
+- Project 26: coming soon...
 
 :rocket: How to Run Projects Locally
 Running these projects on your local machine is straightforward. Follow the steps below:
