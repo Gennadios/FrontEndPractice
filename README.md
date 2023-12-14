@@ -34,7 +34,8 @@ This repository is a collection of simple yet educational mini-projects that aim
 - Project 24: Content Placeholder
 - Project 25: Sticky Navbar
 - Project 26: Vertical Slider
-- Project 27: coming soon...
+- Project 27: Toast Notifications
+- Project 28: coming soon...
 
 :rocket: How to Run Projects Locally
 Running these projects on your local machine is straightforward. Follow the steps below:
