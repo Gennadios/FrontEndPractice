@@ -21,10 +21,22 @@ async function getUserAsync(userName) {
     const { data } = await axios.get(API_URL + userName);
     
     createUserCard(data);
+    getUserReposAsync(userName);
   } catch(error) {
     if (error.response.status === 404) {
       createErrorCard(`There is no profile with the username '${userName}'.`);
     }
+    console.log(error);
+  }
+}
+
+async function getUserReposAsync(userName) {
+  try {
+    const { data } = await axios.get(API_URL + userName + '/repos');
+    
+    addReposToCard(data);
+    console.log(data);
+  } catch(error) {
     console.log(error);
   }
 }
@@ -57,6 +69,22 @@ function createUserCard(userData) {
   `;
 
   main.innerHTML = cardHtml;
+}
+
+function addReposToCard(repos) {
+  const reposElement = document.getElementById('repos');
+
+  repos
+    .slice(0, 5)
+    .forEach(repo => {
+    const repoElement = document.createElement('a');
+    repoElement.classList.add('repo');
+    repoElement.href = repo.html_url;
+    repoElement.target = '_blank';
+    repoElement.innerText = repo.name;
+
+    reposElement.appendChild(repoElement);
+  });
 }
 
 function createErrorCard(message) {
