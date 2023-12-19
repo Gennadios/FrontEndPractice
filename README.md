@@ -36,7 +36,8 @@ This repository is a collection of simple yet educational mini-projects that aim
 - Project 26: Vertical Slider
 - Project 27: Toast Notifications
 - Project 28: Github Profiles
-- Project 29: coming soon...
+- Project 29: Double Click Heart
+- Project 30: coming soon...
 
 :rocket: How to Run Projects Locally
 Running these projects on your local machine is straightforward. Follow the steps below:
