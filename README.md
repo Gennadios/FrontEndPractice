@@ -38,7 +38,8 @@ This repository is a collection of simple yet educational mini-projects that aim
 - Project 28: Github Profiles
 - Project 29: Double Click Heart
 - Project 30: Auto Text Effect
-- Project 31: coming soon...
+- Project 31: Password Generator
+- Project 32: coming soon...
 
 :rocket: How to Run Projects Locally
 Running these projects on your local machine is straightforward. Follow the steps below:
