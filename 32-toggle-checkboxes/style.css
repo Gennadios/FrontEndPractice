@@ -33,12 +33,14 @@ body {
   display: inline-block;
   margin: 0 1rem 0;
   position: relative;
+  transition: background-color .5s;
   height: 2.5rem;
   width: 5rem;
 }
 
 .toggle:checked + .label {
   background-color: #8E44AD;
+  transition: background-color .5s;
 }
 
 .ball {
@@ -49,4 +51,33 @@ body {
   position: absolute;
   top: .25rem;
   left: .25rem;
+  animation: slideOff .3s linear forwards;
+}
+
+.toggle:checked + .label .ball {
+  animation: slideOn .3s linear forwards;
+}
+
+@keyframes slideOn {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    transform: translateX(20px) scale(1.1);
+  }
+  100% {
+    transform: translateX(40px) scale(1);
+  }
+}
+
+@keyframes slideOff {
+  0% {
+    transform: translateX(40px) scale(1);
+  }
+  50% {
+    transform: translateX(20px) scale(1.1);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
 }
