@@ -14,3 +14,39 @@ body {
   margin: 0;
   overflow: hidden;
 }
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin: .625rem 0;
+  width: 12.5rem;
+}
+
+.toggle {
+  visibility: hidden;
+}
+
+.label {
+  background-color: #D0D0D0;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 1rem 0;
+  position: relative;
+  height: 2.5rem;
+  width: 5rem;
+}
+
+.toggle:checked + .label {
+  background-color: #8E44AD;
+}
+
+.ball {
+  background: #FFF;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: .25rem;
+  left: .25rem;
+}
