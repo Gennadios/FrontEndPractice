@@ -40,7 +40,8 @@ This repository is a collection of simple yet educational mini-projects that aim
 - Project 30: Auto Text Effect
 - Project 31: Password Generator
 - Project 32: Toggle Checkboxes
-- Project 33: coming soon...
+- Project 33: Notes App
+- Project 34: coming soon...
 
 :rocket: How to Run Projects Locally
 Running these projects on your local machine is straightforward. Follow the steps below:
