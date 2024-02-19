@@ -45,7 +45,8 @@ This repository is a collection of simple yet educational mini-projects that aim
 - Project 35: Image Carousel
 - Project 36: Hoverboard
 - Project 37: Pokedex
-- Project 38: coming soon...
+- Project 38: Mobile Navigation
+- Project 39: coming soon...
 
 :rocket: How to Run Projects Locally
 Running these projects on your local machine is straightforward. Follow the steps below:
